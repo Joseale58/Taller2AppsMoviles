@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rama Jose</title>
-    <link rel="stylesheet" href="styles/main.scss">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/main.scss" />
+  </head>
+  <body>
     <div class="container">
-        <section class="section-products">
-            <div class="card">
-                hola    
+      <section class="column" id="shownProducts">
+        <div class="product">
+          <img src="assets/images/cheese.png" alt="" class="images" />
+          <div class="description">
+            <h3>Producto</h3>
+            <p>$ 1,000</p>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum asdasdasdsadasdsa jdsadjsa jasdjasjdj</p>
+          </div>
+          <div class="buttons">
+            <button onclick="agregarProducto()">
+              <img src="assets/images/add.png" class="icon" alt="" />
+            </button>
+            <span> 3 </span>
+            <button onclick="eliminarProducto()">
+              <img src="assets/images/delete.png" class="icon" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="product">
+            <img src="assets/images/cake.png" alt="" class="images" />
+            <div class="description">
+              <h3>Producto</h3>
+              <p>$ 1,000</p>
             </div>
-            <div class="card">
-                hola    
+            <div class="description">
+              <p>Lorem ipsum asdasdasdsadasdsa jdsadjsa jasdjasjdj</p>
             </div>
-            <div class="card">
-                hola    
+            <div class="buttons">
+              <button onclick="agregarProducto()">
+                <img src="assets/images/add.png" class="icon" alt="" />
+              </button>
+              <span> 3 </span>
+              <button onclick="eliminarProducto()">
+                <img src="assets/images/delete.png" class="icon" alt="" />
+              </button>
             </div>
-            <div class="card">
-                hola    
+          </div>
+          <div class="product">
+            <img src="assets/images/chicken.png" alt="" class="images" />
+            <div class="description">
+              <h3>Producto</h3>
+              <p>$ 1,000</p>
             </div>
-            <div class="card">
-                hola    
+            <div class="description">
+              <p>Lorem ipsum asdasdasdsadasdsa jdsadjsa jasdjasjdj</p>
             </div>
-            <div class="card">
-                hola    
+            <div class="buttons">
+              <button onclick="agregarProducto()">
+                <img src="assets/images/add.png" class="icon" alt="" />
+              </button>
+              <span> 3 </span>
+              <button onclick="eliminarProducto()">
+                <img src="assets/images/delete.png" class="icon" alt="" />
+              </button>
             </div>
-        </section>
-        <section>
-            <h1>mundo</h1>
-        </section>
+          </div>
+      </section>
+      <section class="column"></section>
     </div>
-    
-</body>
+    <script src="js/utils/main.js"></script>
+  </body>
 </html>

@@ -1,35 +1,59 @@
-.container{
+.container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
 }
 
-section{
-    background-color: #ffff ;
-    width: 50%;
-    height: 100vh;
+.column {
+    flex: 1; /* Hace que ambas columnas ocupen el mismo ancho */
+    padding: 20px;
+    border: 1px solid #ccc;
     margin: 10px;
-    border: 1px solid black;
 }
 
-.section-products{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-
-}
-
-.card{
+.product {
+    border: 1px solid #ccc;
     display: flex;
-    height: 30px;
-    width: 40px;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.images{
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.description{
+    margin-right: 100px;
+}
+
+// Estilos botones
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+.product button {
+    padding: 0px 0px; /* Ajusta el espacio interior del botón */
+    background-color: #fff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    display: inline-flex; /* Muestra los elementos dentro del botón en línea */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+
+.product button img {
+    margin-right: 5px; /* Espacio entre el icono y el texto del botón */
+}
+
+.icon{
+    margin-left: 5px;
+    width: 30px;
+}
+
+.product span {
+    padding-top: 5px;
 }
