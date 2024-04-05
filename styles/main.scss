@@ -18,13 +18,14 @@
 }
 
 .images{
-    width: 100px;
+    width: 10px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
 .description{
     margin-right: 100px;
+    margin-left: 30px;
 }
 
 // Estilos botones
@@ -56,4 +57,17 @@
 
 .product span {
     padding-top: 5px;
+}
+
+
+//Estilos cabecera
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    width: 80px;
 }

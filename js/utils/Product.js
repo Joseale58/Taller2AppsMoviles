@@ -1,8 +1,12 @@
 class Product{
     constructor(obj){
-        this.nombre = obj.nombre;
-        this.precio = obj.precio;
-        this.descripcion = obj.descripcion;
-        this.imagen = obj.imagen;
+        this.id = obj.id;
+        this.title = obj.title;
+        this.price = obj.price;
+        this.descripcion = obj.description;
+        this.image = new Image();
+        this.image.src = obj.imagen;
     }
 }
+
+export default Product;
