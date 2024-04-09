@@ -4,6 +4,7 @@
  */
 package views;
 
+import java.lang.reflect.Array;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,19 +14,19 @@ import java.util.Map;
  */
 public class Teclado extends javax.swing.JFrame {
 
-    private Map<Integer, String> teclas; 
+    private Map<Integer, String[]> teclas; 
     private String numeros = "";
 
     public Teclado() {
         teclas = new HashMap<>();
-        teclas.put(2, "ABC");
-        teclas.put(3, "DEF");
-        teclas.put(4, "GHI");
-        teclas.put(5, "JKL");
-        teclas.put(6, "MNO");
-        teclas.put(7, "PQRS");
-        teclas.put(8, "TUV");
-        teclas.put(9, "WXYZ");
+        teclas.put(2, new String[] {"A", "B", "C"});
+        teclas.put(3, new String[] {"D", "E", "F"});
+        teclas.put(4, new String[] {"G", "H", "I"});
+        teclas.put(5, new String[] {"J", "K", "L"});
+        teclas.put(6, new String[] {"M", "N", "O"});
+        teclas.put(7, new String[] {"P", "Q", "R", "S"});
+        teclas.put(8, new String[] {"T", "U", "V"});
+        teclas.put(9, new String[] {"W", "X", "Y", "Z"});
         initComponents();
     }
 
@@ -202,12 +203,12 @@ public class Teclado extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public String getLetras(int numero){
+    public String[] getLetras(int numero){
         return teclas.get(numero);
     }
 
     public void setPantalla(int numero){
-        numeros += getLetras(numero);
+        numeros += numero;
         pantalla.setText(numeros);
     }
 
@@ -252,7 +253,16 @@ public class Teclado extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_0ActionPerformed
 
     private void btn_okActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_okActionPerformed
-        // TODO add your handling code here:
+        String[][] matriz = new String[numeros.length()][4];
+        for (int i = 0; i < numeros.length(); i++) {
+            matriz[i] = getLetras(Integer.parseInt(String.valueOf(numeros.charAt(i))));
+        }
+        for(int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz[i].length; j++){
+                System.out.println(matriz[i][j]);
+            }
+        }
+
     }//GEN-LAST:event_btn_okActionPerformed
 
     /**
