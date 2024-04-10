@@ -13,7 +13,7 @@ let songs = [
   { title: "Without me", subtitle: "Eminem", file: "withoutme.mp3", logo: "./images/emin.jpg" },
   { title: "Bellaquita", subtitle: "Lenny Tavarez, Dalex, Anitta", file: "bellaquita.mp3", logo: "./images/bellaquita.jpg" },
   { title: "Ahora Dice", subtitle: "J Balvin, Ozuna, Chris Jedi", file: "ahoradice.mp3", logo: "./images/ad.jpg" },
-  { title: "Esclava", subtitle: "Bryant Myers", file: "esclava.mp3", logo: "./images/es.jpg" }
+  { title: "Esclava", subtitle: "Bryant Myers, Anonimus, Anuel AA", file: "esclava.mp3", logo: "./images/es.jpg" }
 ];
 
 let currentSongIndex = 0;
