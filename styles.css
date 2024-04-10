@@ -27,16 +27,14 @@
   text-align: center; 
 }
 #song-subtitle {
-  color: #f1f0f0; 
-  font-size: 14px; 
+  color:rgba(255, 255, 255, 0.734) ; 
   font-style: italic; 
-  font-size: 20px; 
+  font-size: 13px; 
 }
 #song-title {
-    color: #353535; 
-    font-size: 14px; 
+    color: rgba(255, 255, 255, 0.734); 
     font-style:normal; 
-    font-size: 30px; 
+    font-size: 18px; 
   }
 
 .controls {
@@ -45,7 +43,7 @@
   
 .controls .btn {
     display: inline-block; 
-    margin: 0 10px;
+    margin: 10px;
 }
   
 .container {
@@ -56,4 +54,16 @@
 .player-container {
   background-color: rgba(167, 165, 165, 0.734);
   align-items: center;
+}
+.song-text-container {
+  background-color: rgb(0, 0, 0); /* Color de fondo con transparencia */
+  border: 1px solid #000; /* Borde sólido */
+  border-radius: 5px; /* Borde redondeado para un aspecto más suave */
+  padding: 1px; /* Ajusta el relleno según sea necesario */
+  display: inline-block; /* Para que el contenedor se ajuste al contenido */
+}
+
+.song-text-container h2,
+.song-text-container h3 {
+  margin: 1px 0; /* Ajusta el margen entre el título y el subtítulo */
 }
