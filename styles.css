@@ -1,0 +1,46 @@
+.player-container{
+    background-color: rgba(167, 165, 165, 0.734);
+    align-items: center;
+}
+
+.ocultar {
+    display: none;
+  }
+    
+  .btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    
+    img {
+     width: 32px;
+     height: 32px;
+     
+    }
+  }
+#song-info {
+  text-align: center; 
+}
+#song-subtitle {
+  color: #f1f0f0; 
+  font-size: 14px; 
+  font-style: italic; 
+  font-size: 20px; 
+}
+#song-title {
+    color: #353535; 
+    font-size: 14px; 
+    font-style:normal; 
+    font-size: 30px; 
+  }
+
+.controls {
+    text-align: center; 
+}
+  
+.controls .btn {
+    display: inline-block; 
+    margin: 0 10px;
+}
+  
